@@ -281,12 +281,13 @@ body {
   font-size: 1.5em;
   font-weight: 700;
   margin-bottom: 10px;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 .bookmark-title {
   font-size: 0.85em;
   line-height: 1.25em;
   word-wrap: break-word;
+  margin-bottom: 5px;
 }
 .close-icon {
   position: absolute;
@@ -527,15 +528,15 @@ body {
   justify-content: center;
 }
 .bookmark-tag-pill {
-  display: inline-block;
-  padding: 4px 10px;
-  font-size: 12px;
-  font-weight: 600;
-  border-radius: var(--radius-pill);
-  background: none;
-  border: 1px solid #d057a0;
-  color: #d057a0;
-  cursor: default;
+    display: inline-block;
+    padding: 2px 10px 5px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: var(--radius-pill);
+    background: #ffffff33;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    cursor: default;
 }
 
 /* ───────── POPUP STYLING: PREMIUM, FLUID, FUN ───────── */
@@ -654,6 +655,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+      padding-top: 0px;
+    padding-bottom: 5px;
 }
 .popupClose:hover {
   background: var(--accent-hover);
