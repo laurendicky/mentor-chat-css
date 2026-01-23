@@ -135,6 +135,7 @@ body {
   cursor: pointer;
   transition: all 0.25s;
   position: relative; 
+  margin-top: 10px;
 }
 .bookmark-link:hover {
   background: #d057a0;
@@ -158,6 +159,41 @@ body {
 .edit-tags-btn:hover {
   background: #d057a0;
   color: #fff;
+}
+/* ───────── NEW TAG PICKER STYLES ───────── */
+.tag-pills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 5px;
+  min-height: 40px; /* Prevent jumping if empty */
+}
+
+.tag-choice {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #ccc;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none; /* Prevents text highlighting on quick clicks */
+}
+
+.tag-choice:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Selected State */
+.tag-choice.selected {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 128, 0, 0.2);
 }
 
 /* make bookmark grid bubble transparent & border-less */
