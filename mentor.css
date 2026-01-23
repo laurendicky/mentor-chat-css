@@ -9,8 +9,8 @@
   --shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
 
   /* brand accent (deep indigo) */
-  --accent: #008000;
-  --accent-hover: #4d4fab;
+  --accent: #27b2cd;
+  --accent-hover: #27b2cd;
 
   --pink: #FF2D55;
   --purple: #BF5AF2;
@@ -166,12 +166,12 @@ body {
   flex-wrap: wrap;
   gap: 8px;
   margin-top: 5px;
-  min-height: 40px; /* Prevent jumping if empty */
+  min-height: 20px; /* Prevent jumping if empty */
 }
 
 .tag-choice {
   display: inline-block;
-  padding: 6px 14px;
+  padding: 2px 14px 4px;
   font-size: 13px;
   font-weight: 500;
   border-radius: var(--radius-pill);
